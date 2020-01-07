@@ -129,6 +129,18 @@ class LinkedList:
             return 0
         return 1 + self.len_recursive(node.next)
 
+    def swap_nodes(self, key_1, key_2):
+        # Swapping the position of two nodes in a linked list
+
+
+
+
+
+
+
+
+
+
 
 llist = LinkedList()
 llist.append("A")
