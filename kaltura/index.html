@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kaltura</title>
+    <style>
+            body{
+                box-sizing: border-box;
+                margin: 0;
+            }
+
+            main{
+                padding: 30px;
+            }
+    </style>
+</head>
+<body>
+        <main>
+            <div id="kalturaPlayer" style="width: 640px;height: 360px"></div>
+        </main>
+        <script type="text/javascript" src="https://cdnapisec.kaltura.com/p/2637961/embedPlaykitJs/uiconf_id/44881911"></script>
+        <script type="text/javascript">
+                try {
+                    let kalturaPlayer = KalturaPlayer.setup({
+                    targetId: "kalturaPlayer",
+                    provider: {
+                        partnerId: 2637961,
+                        uiConfId: 44881911
+                    },
+                    playback: {
+                        autoplay: true
+                        }
+                    });
+                    kalturaPlayer.loadMedia({entryId: '1_d8a0am6c'});
+                } catch (e) {
+                    console.error(e.message)
+                }
+          </script>
+</body>
+</html>
